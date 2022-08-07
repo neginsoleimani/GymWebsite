@@ -254,6 +254,10 @@ img {
 
 
 /* Change background header */
+.bg-header {
+  background-color: var(--body-color);
+  box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
+}
 
 
 /* Active link */
@@ -361,13 +365,13 @@ img {
 
 /*=============== LOGOS ===============*/
 
-.logos__container{
-  grid-template-columns: repeat(2,1fr);
+.logos__container {
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
 }
 
-.logos__img{
+.logos__img {
   width: 120px;
 }
 
