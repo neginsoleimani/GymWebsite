@@ -391,11 +391,11 @@ img {
   transition: background .5s, border .4s;
 }
 
-.program__img{
+.program__img {
   width: 38px;
 }
 
-.program__shape{
+.program__shape {
   width: 50px;
   height: 50px;
   background-color: var(--first-color-gray);
@@ -403,129 +403,129 @@ img {
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
-  transition:  background .5s;
+  transition: background .5s;
 }
 
-.program__title{
+.program__title {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
 }
 
-.program__description{
+.program__description {
   font-size: var(--small-font-size);
   letter-spacing: .5px;
   line-height: 150%;
 }
 
 .program__title,
-.program__description{
+.program__description {
   transition: color .5s;
 }
 
-.program__button{
+.program__button {
   justify-self: flex-end;
   margin-top: 1.5rem;
   font-size: 1.25rem;
   color: var(--title-color-black);
   opacity: 0;
-  transition:  opacity .4s;
+  transition: opacity .4s;
 }
 
-.program__button i{
+.program__button i {
   display: block;
-  transition:  transform .3s;
+  transition: transform .3s;
 }
 
-.program__button:hover i{
+.program__button:hover i {
   transform: translateX(.25rem);
 }
 
-.program__card:hover{
+.program__card:hover {
   background-color: var(--first-color);
-  border:  2px solid var(--first-color-light);
+  border: 2px solid var(--first-color-light);
 }
 
-.program__card:hover .program__shape{
+.program__card:hover .program__shape {
   background-color: var(--first-color-light);
 }
 
 .program__card:hover .program__title,
-.program__card:hover .program__description{
+.program__card:hover .program__description {
   color: var(--title-color-black);
 }
 
-.program__card:hover .program__button{
+.program__card:hover .program__button {
   opacity: 1;
 }
 
 /*=============== CHOOSE ===============*/
 
-.choose{
+.choose {
   padding: 0;
 }
 
-.choose__overflow{
+.choose__overflow {
   position: relative;
 }
 
-.choose__container{
+.choose__container {
   row-gap: 3rem;
 }
 
-.choose__content .section__data{
+.choose__content .section__data {
   margin-bottom: 2rem;
 }
 
-.choose__description{
+.choose__description {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
-.choose__data{
+.choose__data {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
 }
 
-.choose__group{
+.choose__group {
   text-align: center;
 }
 
-.choose__number{
+.choose__number {
   font-size: var(--h1-font-size);
   font-family: var(--second-font);
   font-weight: 400;
   margin-bottom: 0.25rem;
 }
 
-.choose__subtitle{
+.choose__subtitle {
   font-size: var(--small-font-size);
 }
 
-.choose__triangle{
+.choose__triangle {
   height: 325px;
   position: absolute;
   left: 0;
   bottom: 0;
-  clip-path: polygon(0 0 , 0 100% , 100% 100%);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
 
-.choose__triangle-1{
+.choose__triangle-1 {
   width: 305px;
   background-color: var(--first-color);
 }
 
-.choose__triangle-2{
+.choose__triangle-2 {
   width: 205px;
   background-color: var(--first-color-alt);
 }
 
-.choose__triangle-3{
+.choose__triangle-3 {
   width: 105px;
   background-color: var(--first-color-dark);
 }
 
-.choose__img{
+.choose__img {
   width: 260px;
   display: block;
   position: relative;
@@ -535,7 +535,7 @@ img {
 
 /*=============== PRICING ===============*/
 
-.pricing__container{
+.pricing__container {
   grid-template-columns: 285px;
   justify-content: center;
   row-gap: 2rem;
@@ -543,21 +543,21 @@ img {
 
 .pricing__card,
 .pricing__shape,
-.pricing__list{
+.pricing__list {
   display: grid;
 }
 
-.pricing__card{
+.pricing__card {
   row-gap: 2rem;
   background-color: hsla(79, 6%, 64%, .07);
   padding: 2rem 2.5rem;
 }
 
-.pricing__img{
+.pricing__img {
   width: 35px;
 }
 
-.pricing__shape{
+.pricing__shape {
   width: 60px;
   height: 60px;
   background-color: var(--first-color-gray);
@@ -566,64 +566,132 @@ img {
   margin-bottom: 1rem;
 }
 
-.pricing__title{
+.pricing__title {
   font-size: var(--h3-font-size);
   color: var(--text-color);
   margin-bottom: 1rem;
 }
 
-.pricing__number{
+.pricing__number {
   font-size: var(--h1-font-size);
 }
 
-.pricing__list{
+.pricing__list {
   row-gap: 1rem;
 }
 
-.pricing__item{
+.pricing__item {
   display: flex;
   column-gap: .5rem;
-  align-items:center ;
+  align-items: center;
   font-size: var(--small-font-size);
 }
 
-.pricing__item i{
+.pricing__item i {
   font-size: 1.25rem;
   color: var(--first-color);
 }
 
-.pricing__item-opacity{
+.pricing__item-opacity {
   opacity: .3;
 }
 
-.pricing__button{
+.pricing__button {
   background-color: var(--title-color);
 }
 
-.pricing__button:hover{
+.pricing__button:hover {
   background-color: var(--title-color);
 }
 
-.pricing__card-active{
+.pricing__card-active {
   background-color: var(--first-color);
-  border:2px solid var(--first-color-light) ;
+  border: 2px solid var(--first-color-light);
 }
 
-.pricing__card-active .pricing__shape{
+.pricing__card-active .pricing__shape {
   background-color: var(--first-color-light);
 }
 
-.pricing__card-active .pricing__item i{
+.pricing__card-active .pricing__item i {
   color: var(--title-color);
 }
 
 .pricing__card-active .pricing__title,
 .pricing__card-active .pricing__number,
-.pricing__card-active .pricing__item{
+.pricing__card-active .pricing__item {
   color: var(--title-color-black);
 }
+
 /*=============== CALCULATE ===============*/
 
+.calculate {
+  padding-bottom: 0;
+}
+
+.calculate__container {
+  row-gap: 4rem;
+}
+
+.calculate__content .section__titles{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.calculate__description {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.calculate__form{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.calculate__box{
+  position: relative;
+  border: 2px solid var(--first-color-light);
+}
+
+.calculate__input{
+  width: 100%;
+  background: transparent;
+  padding: 20px 56px 20px 24px;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+}
+
+.calculate__input::-webkit-outer-spin-button,
+.calculate__input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculate__input[type=number]{
+  -moz-appearance: textfield;
+}
+
+.calculate__label{
+  position: absolute;
+  right: 1.5rem;
+  top: 1.25rem;
+  color: var(--title-color);
+}
+
+.calculate__form .button{
+  margin-top: 1.5rem;
+}
+
+.calculate__img{
+  width: 200px;
+  justify-self: center;
+}
+
+.calculate__message{
+  position: absolute;
+  transform: translateY(1rem);
+}
 
 /*=============== FOOTER ===============*/
 

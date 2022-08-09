@@ -30,7 +30,7 @@ navLink.forEach(n => n.addEventListener("click", linkAction))
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () =>  {
+const scrollHeader = () => {
     const header = document.getElementById("header")
     if (this.scrollY >= 50) {
         header.classList.add('bg-header');
@@ -51,6 +51,22 @@ window.addEventListener("scroll", scrollHeader)
 
 
 /*=============== CALCULATE JS ===============*/
+const calculateForm = document.getElementById("calculate-form"),
+    calculateCm = document.getElementById("calculate-cm"),
+    calculateKg = document.getElementById("calculate-kg"),
+    calculateMessage = document.getElementById("calculate-message")
+
+const calculateBmi = (e) => {
+    e.preventDefault()
+
+    // Check if the fields have a value
+    
+
+}
+
+calculateForm.addEventListener("submit",calculateBmi)
+
+
 
 
 /*=============== EMAIL JS ===============*/
