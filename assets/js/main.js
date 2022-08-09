@@ -93,13 +93,12 @@ const calculateBmi = (e) => {
         }
 
         // To clear the input field
-        calculateCm.value=''
-        calculateKg.value=''
+        calculateCm.value = ''
+        calculateKg.value = ''
 
         setTimeout(() => {
             calculateMessage.textContent = ''
         }, 4000)
-        
     }
 
 }
