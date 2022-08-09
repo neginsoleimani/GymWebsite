@@ -798,8 +798,9 @@ img {
 }
 
 .footer__message{
-  position: absolute;
+  position: relative;
   transform: translateY(1rem);
+  margin-bottom: 2rem;
 }
 
 /*=============== SCROLL BAR ===============*/
