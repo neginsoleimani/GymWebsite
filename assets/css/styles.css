@@ -697,7 +697,7 @@ img {
 
 /*=============== FOOTER ===============*/
 
-.footer__cotainer {
+.footer__container {
   row-gap: 4rem;
   padding-top: 1rem;
 }
@@ -860,39 +860,109 @@ img {
     margin-right: 1rem;
   }
 
-  .section__titles{
+  .section__titles {
     flex-direction: column;
     row-gap: .25rem;
   }
 
   .home__triangle,
-  .choose__triangle{
+  .choose__triangle {
     height: 255px;
   }
 
   .home__triangle-3,
-  .choose__triangle-1{
+  .choose__triangle-1 {
     width: 260px;
   }
 
-  .choose__img{
+  .choose__img {
     width: 195px;
   }
 
-  .pricing__container{
-   grid-template-columns: 250px;
+  .pricing__container {
+    grid-template-columns: 250px;
   }
 
-  .pricing__card{
+  .pricing__card {
     padding: 1.5rem;
   }
 
-  .footer__content{
+  .footer__content {
     grid-template-columns: 1fr;
   }
 }
 
 /* For medium devices */
+
+@media screen and (min-width:768px) {
+
+  .nav__menu {
+    width: 50%;
+  }
+
+  .home__container,
+  .choose__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__data,
+  .choose__content .section__data,
+  .choose__description,
+  .calculate__description {
+    text-align: initial;
+  }
+
+  .logos__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .program__container {
+    grid-template-columns: repeat(2, 225px);
+    gap: 2.5em;
+  }
+
+  .choose__content {
+    order: 1;
+  }
+
+  .choose__data {
+    justify-items: flex-start;
+  }
+
+  .choose__content .section__titles,
+  .calculate__content .section__titles {
+    justify-content: initial;
+  }
+
+  .pricing__container {
+    grid-template-columns: repeat(2, 285px);
+    gap: 2.5rem;
+  }
+
+  .calculate__container {
+    grid-template-columns: 1fr .8fr;
+    align-items: center;
+  }
+
+  .calculate__form {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem
+  }
+
+  .calculate__form .button{
+    grid-column: 1/3;
+  }
+
+  .footer__container{
+    grid-template-columns: repeat(2,max-content);
+    justify-content: space-between;
+  }
+
+  .footer__content{
+    grid-template-columns: repeat(3,max-content);
+  }
+}
 
 
 /* For large devices */
