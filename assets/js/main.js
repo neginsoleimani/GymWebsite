@@ -42,7 +42,7 @@ window.addEventListener("scroll", scrollHeader)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive() {
+const scrollActive = () => {
     const scrollY = window.pageYOffset
 
     sections.forEach(current => {
@@ -63,6 +63,16 @@ window.addEventListener("scroll", scrollActive)
 
 
 /*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+    const scrollUp = document.getElementById("scroll-up")
+    if (this.scrollY >= 350) {
+        scrollUp.classList.add("show-scroll")
+    } else {
+        scrollUp.classList.remove("show-scroll")
+    }
+}
+
+window.addEventListener("scroll", scrollUp)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
@@ -160,12 +170,12 @@ const sendEmail = (e) => {
 
             }, (error) => {
                 // Mail sending error
-                alert('OOPS! SOMETHING HAS FAILED...',error)
+                alert('OOPS! SOMETHING HAS FAILED...', error)
             }
             )
 
-            // To clear the input field
-            contactUser.value=''
+        // To clear the input field
+        contactUser.value = ''
     }
 }
 

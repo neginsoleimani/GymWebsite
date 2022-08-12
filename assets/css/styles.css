@@ -261,7 +261,7 @@ img {
 
 
 /* Active link */
-.active-link{
+.active-link {
   color: var(--first-color);
 }
 
@@ -770,17 +770,17 @@ img {
   color: var(--first-color);
 }
 
-.footer__group{
+.footer__group {
   margin-top: 5rem;
   justify-items: center;
   row-gap: 2rem;
 }
 
-.footer__social{
-  column-gap:1.25rem ;
+.footer__social {
+  column-gap: 1.25rem;
 }
 
-.footer__social-link{
+.footer__social-link {
   display: inline-flex;
   padding: 0.35rem;
   background-color: var(--first-color);
@@ -790,16 +790,16 @@ img {
   transition: background .4s;
 }
 
-.footer__social-link:hover{
-  background-color:var(--first-color-dark);
+.footer__social-link:hover {
+  background-color: var(--first-color-dark);
 }
 
-.footer__copy{
+.footer__copy {
   font-size: var(--smaller-font-size);
-  color:var(--text-color-light);
+  color: var(--text-color-light);
 }
 
-.footer__message{
+.footer__message {
   position: relative;
   transform: translateY(1rem);
   margin-bottom: 2rem;
@@ -807,11 +807,48 @@ img {
 
 /*=============== SCROLL BAR ===============*/
 
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(79, 4%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(79, 4%, 25%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(79, 4%, 35%);
+  border-radius: .5rem;
+}
+
 
 /*=============== SCROLL UP ===============*/
 
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--first-color);
+  display: inline-flex;
+  padding: 0.35rem;
+  color: var(--title-color-black);
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: .3s;
+}
+
+.scrollup:hover{
+  transform: translateY(-.25rem);
+}
+
 
 /* Show Scroll Up*/
+
+.show-scroll{
+bottom: 3rem;
+}
 
 
 /*=============== BREAKPOINTS ===============*/
